@@ -1,0 +1,11 @@
+{
+    "sip": 16,
+    "name": "Parrot Pass",
+    "properties": { "collection": "Parrot Pass" },
+    "description": "The Parrot Pass is an all inclusive pass to our Stacks utility. Ownership of a pass grants you access to your very own virtual gallery for all your Stacks NFT’s, as well as Parrot Radio for Stacks. A web3 mobile music app for your music and non-music based Stacks NFT’s.",
+    "size": "1031",
+    "price": "0",
+    "asset_type": "image/png",
+    "attributes": [],
+    "image": "ipfs://ipfs/bafkreieaeyaq32355q23trwzv7voffqzpdcayx7aldmozl7l6fabsrjg2u"
+}
