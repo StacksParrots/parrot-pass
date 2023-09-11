@@ -43,12 +43,13 @@
         (asserts! (is-ok (contract-call? 'ST16JGJD3W4XGTNA6PA66MQMWHHB32V30YCPVT8E7.sp2d transfer nft-id tx-sender (var-get burn-address))) ERR-BURN-FAILED)
         (mint)))
 
-
-(define-public (burn-to-redeem-3d (nft-id uint))
-    (begin
-        (asserts! (is-eq (unwrap! (unwrap! (contract-call? 'ST16JGJD3W4XGTNA6PA66MQMWHHB32V30YCPVT8E7.sp31d get-owner nft-id) ERR-NOT-OWNER) ERR-NOT-OWNER) tx-sender) ERR-NOT-OWNER)
-        (asserts! (is-ok (contract-call? 'ST16JGJD3W4XGTNA6PA66MQMWHHB32V30YCPVT8E7.sp31d burn nft-id)) ERR-BURN-FAILED)
-        (mint)))
+;; This won't work because I forgot to remove the contract sender restriction from the burn function ('ST16JGJD3W4XGTNA6PA66MQMWHHB32V30YCPVT8E7.sp31d burn).
+;;
+;;(define-public (burn-to-redeem-3d (nft-id uint))
+;;    (begin
+;;        (asserts! (is-eq (unwrap! (unwrap! (contract-call? 'ST16JGJD3W4XGTNA6PA66MQMWHHB32V30YCPVT8E7.sp31d get-owner nft-id) ERR-NOT-OWNER) ERR-NOT-OWNER) tx-sender) ERR-NOT-OWNER)
+;;        (asserts! (is-ok (contract-call? 'ST16JGJD3W4XGTNA6PA66MQMWHHB32V30YCPVT8E7.sp31d burn nft-id)) ERR-BURN-FAILED)
+;;        (mint)))
 
 ;; private
 
