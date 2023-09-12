@@ -30,7 +30,7 @@
 (define-data-var total-price uint u0)
 (define-data-var artist-address principal 'SP467VFDYHV185JSQ98V9VTA7JS3PFJ3DM8PXD20)
 (define-data-var burn-address principal 'SP000000000000000000002Q6VF78)
-(define-data-var ipfs-root (string-ascii 80) "ipfs://ipfs/bafkreidk5h25dxrfdx6riq4uop7km4ef3g3mduabzcbovy2enk2psuri44/")
+(define-data-var ipfs-root (string-ascii 80) "ipfs://ipfs/bafkreicbr42iklc4e7urjlp624ju6qsviaov3co6doayncibnnkcpz4qqe/")
 (define-data-var claim-paused bool true)
 (define-data-var metadata-frozen bool false)
 (define-data-var locked bool false)
